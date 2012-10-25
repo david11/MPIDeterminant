@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ( ! getopts ":n:p:t:k:" opt); then
-  echo "Usage: `basename $0` -n <number of numbers> -p <number of physical processors> -t <2d, mesh> -k <processors per node>"
+  echo "Usage: `basename $0` -n <number of numbers> -p <number of physical processors> -t <ring, mesh> -k <processors per node>"
   exit 1
 fi
 while getopts ":n:p:t:k:" opt; do
