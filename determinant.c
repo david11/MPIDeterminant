@@ -133,10 +133,10 @@ int parse_arguments(int argc, char **argv) {
         computerStats = 1;
         break;
       case 't':
-        if( strcmp(optarg, "2d" ) == 0 ) type = ring;
+        if( strcmp(optarg, "ring" ) == 0 ) type = ring;
         else if( strcmp(optarg, "mesh" ) == 0 ) type = mesh;
         else {
-          fprintf( stderr, "Option -%c %s in incorrect. Allowed values are: 2d, mesh\n", optopt, optarg);
+          fprintf( stderr, "Option -%c %s in incorrect. Allowed values are: ring, mesh\n", optopt, optarg);
           return 1;
         }
         break;
